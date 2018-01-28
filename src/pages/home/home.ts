@@ -10,7 +10,7 @@ import { Flashlight } from '@ionic-native/flashlight';
 export class HomePage {
   btn_title: any;
   constructor(public navCtrl: NavController, private fl: Flashlight) {
-    this.btn_title = 'turn on Flashlight';
+    this.btn_title = 'Toggle Flashlight';
   }
   switchFlashLight(){
     this.fl.available().then((resp) => {
